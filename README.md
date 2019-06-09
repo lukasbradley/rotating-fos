@@ -85,10 +85,6 @@ the following methods:
   invoked using the `Timer` thread passed via `RotationConfig`. Hence
   blocking callback methods are going to block `Timer` thread too.
 
-- **Conflicting rotations are discarded.** When a rotation gets triggered
-  while one is still in progress, the latter will be discarded. (Conflicts
-  are acknowledged via `RotationCallback#onConflict` method.)
-
 # Contributors
 
 - [Jonas (yawkat) Konrad](http://yawk.at/) (`RotatingFileOutputStream`
@@ -96,7 +92,7 @@ the following methods:
 
 # License
 
-Copyright &copy; 2017 [Volkan Yazıcı](http://vlkan.com/)
+Copyright &copy; 2017-2019 [Volkan Yazıcı](https://vlkan.com/)
 
 rotating-fos is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
@@ -108,4 +104,4 @@ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with
-this program. If not, see http://www.gnu.org/licenses/.
+this program. If not, see https://www.gnu.org/licenses/.
